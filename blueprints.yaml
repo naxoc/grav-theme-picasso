@@ -1,0 +1,27 @@
+name: Picasso
+version: 0.1
+description: "Picasso is a crooked theme for **Grav**"
+icon: empire
+author:
+  name: naxoc
+  email: xoc@naxoc.net
+  url: http://naxoc.net
+#homepage: https://github.com/
+#demo: http://demo.getgrav.org/blog-skeleton
+#keywords: theme, modern, fast, responsive, html5, css3
+#bugs: https://github.com/getgrav/grav-theme-/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
